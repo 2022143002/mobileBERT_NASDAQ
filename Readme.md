@@ -294,7 +294,7 @@ HuggingFace에서 공개한 `ashraq/financial-news` 데이터셋을 `datasets` �
 
 | 데이터 | 출처 파일 | 핵심 컬럼 |
 |--------|----------|-----------|
-| 뉴스 감성 예측 결과 | `nasdaq_perfect_4_labels.csv` | `Date`, `Headline_and_Subtitle`, `Predicted_Label` |
+| 뉴스 라벨 데이터 | `nasdaq_perfect_4_labels.csv` | `Date`, `Headline_and_Subtitle`, `Label` / `Reviewed_Label` |
 | 나스닥 주가 데이터 | `nasdaq_5years_prices.csv` | `Date`, `Close`, `Return` |
 
 **결합 절차**
@@ -304,8 +304,8 @@ HuggingFace에서 공개한 `ashraq/financial-news` 데이터셋을 `datasets` �
 3. **날짜별 집계**: 동일 날짜에 복수의 뉴스가 존재하므로 날짜별로 그룹화하여 아래 지표를 산출
 
 ```
-N_p    = 해당 날짜에 긍정(1)으로 예측된 뉴스 건수
-N_n    = 해당 날짜에 부정(0)으로 예측된 뉴스 건수
+N_p    = 해당 날짜에 긍정(1)으로 분류된 뉴스 건수
+N_n    = 해당 날짜에 부정(0)으로 분류된 뉴스 건수
 Signal = N_p - N_n   (감성 신호 벡터)
 ```
 
