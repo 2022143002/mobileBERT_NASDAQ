@@ -1,4 +1,4 @@
-# MobileBERT를 활용한 나스닥 금융 뉴스 감성 분석 및 주가 변동 상관관계 연구
+# MobileBERT를 활용한 나스닥 금융 뉴스 감성이 주가 변동에 미치는 영향 분석
 
 <img src="https://img.shields.io/badge/python-%233776AB.svg?&style=for-the-badge&logo=python&logoColor=white" />
 <img src="https://img.shields.io/badge/pycharm-%23000000.svg?&style=for-the-badge&logo=pycharm&logoColor=white" />
